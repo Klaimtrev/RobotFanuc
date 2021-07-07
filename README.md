@@ -15,7 +15,7 @@ Hello, this is some text to fill in this, [here](#place-2), is a link to the sec
 
 ## Classes and Methods
 
-###First Joint
+### First Joint
 
 |__Variables__|__Type__|__Default Value__|__Description__|
 |:---|---|---|---:|
