@@ -6,9 +6,9 @@ The Robot can be move through FK or IK directions but all the joints have a rota
 The final joint of the Robot can grab and drop objects through a Configurable Joint
 
 ## Sections
-  [First Joint](#first-joint)
-  [Second Joint](#second-joint)
-  [Third Joint](#scripts-controller)
+  [First Joint](#first-joint) <br />
+  [Second Joint](#second-joint) <br />
+  [Scripts Controller](#scripts-controller) <br />
 
 ## Classes and Methods
 
