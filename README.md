@@ -1,9 +1,9 @@
 # Fanuc Robot Unity
 
 ## Description
-The latest Unity Project for the FANUC 2000iC robot has 16 Scripts inside the "For_Isabel" folder and 5 scripts inside the "HybridIK" folder
-The Robot can be move through FK or IK directions but all the joints have a rotation limit.
-The final joint of the Robot can grab and drop objects through a Configurable Joint
+The latest Unity Project for the FANUC 2000iC robot has 16 Scripts inside the "For_Isabel" folder and 5 scripts inside the "HybridIK" folder <br />
+The Robot can be move through FK or IK directions but all the joints have a rotation limit. <br />
+The final joint of the Robot can grab and drop objects through a Configurable Joint <br />
 
 ## Sections
   [First Joint](#first-joint) <br />
