@@ -7,11 +7,8 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 
 ## Sections
   [First Joint](#first-joint)
-  
-
-### Place 1
-
-Hello, this is some text to fill in this, [here](#place-2), is a link to the second place.
+  [Second Joint](#second-joint)
+  [Third Joint](#scripts-controller)
 
 ## Classes and Methods
 
@@ -34,7 +31,7 @@ Hello, this is some text to fill in this, [here](#place-2), is a link to the sec
 |FirstJoint|getCurrentJoint1()|returns the local rotation of the Joint | NA |
 |FirstJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| NA |
 
-###Second Joint
+### Second Joint
 |__Variables__|__Type__|__Default Value__|__Description__|
 |:---|---|---|---:|
 |max|float|76| maximum rotation degree |
@@ -53,7 +50,7 @@ Hello, this is some text to fill in this, [here](#place-2), is a link to the sec
 |SecondJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| NA |
 
 
-###Scripts Controller
+### Scripts Controller
 |__Variables__|__Type__|__Default Value__|__Description__|
 |:---|---|---|---:|
 |RecordNumber|int|0| Number of the first line where the reader will get the coordinates from|
@@ -89,12 +86,6 @@ Hello, this is some text to fill in this, [here](#place-2), is a link to the sec
 |ScriptsController|DecreseSpeed()|decreases the speed of all joints of the robot| ctrl|
 |ScriptsController|findIndex(char, string)|finds the index of # from list1 and returns an int[] with the locations of all of them | NA |
 |ScriptsController|loadMovementRecord(int)|loads the coordinates for each joint based on list1 and findIndex| l |
-  
-  
- ### Place 2
-
-Place one has the fun times of linking here, but I can also link back [here](#place-1).
-
   
 # List of errors (x means solved)
 - [x] Picking multiple objects
