@@ -110,3 +110,5 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 - [x] Picking multiple objects
 - [ ] Store picking up method inside log.txt
 - [ ] Picked object does not follow robot's movement
+  
+ # Log
