@@ -8,6 +8,7 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 ## Sections
   [First Joint](#first-joint) <br />
   [Second Joint](#second-joint) <br />
+  [Third Joint](#third-joint) <br />
   [Scripts Controller](#scripts-controller) <br />
 
 ## Classes and Methods
@@ -25,9 +26,9 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 |__Class__|__Method__|__Description__|__Key__|
 |:---|---|---|---:|
 |FirstJoint|getEuler()|returns a Vector3 with the local rotation of the joint| NA |
-|FirstJoint|RotatePositiveX_Joint1()|rotates first joint in positive x axis by adding a float number (motion * speed) to the current x position| x|
-|FirstJoint|RotateNegativeX_Joint1()|rotates first joint in negative x axis by substracting a float number (motion * speed) to the current x position| x|
-|FirstJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| x|
+|FirstJoint|RotatePositiveX_Joint1()|rotates first joint in positive x axis by adding a float number (motion * speed) to the current x position| A |
+|FirstJoint|RotateNegativeX_Joint1()|rotates first joint in negative x axis by substracting a float number (motion * speed) to the current x position| D |
+|FirstJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| NA |
 |FirstJoint|getCurrentJoint1()|returns the local rotation of the Joint | NA |
 |FirstJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| NA |
 
@@ -43,10 +44,28 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 |__Class__|__Method__|__Description__|__Key__|
 |:---|---|---|---:|
 |SecondJoint|getEuler()|returns a Vector3 with the local rotation of the joint| NA |
-|SecondJoint|RotatePositiveY_Joint2()|rotates first joint in positive Y axis by adding a float number (motion * speed) to the current x position| x|
-|SecondJoint|RotateNegativeY_Joint2()|rotates first joint in negative Y axis by substracting a float number (motion * speed) to the current x position| x|
-|SecondJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| x|
+|SecondJoint|RotatePositiveY_Joint2()|rotates first joint in positive Y axis by adding a float number (motion * speed) to the current x position| W |
+|SecondJoint|RotateNegativeY_Joint2()|rotates first joint in negative Y axis by substracting a float number (motion * speed) to the current x position| S |
+|SecondJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| NA |
 |SecondJoint|getCurrentJoint2()|returns the local rotation of the Joint | NA |
+|SecondJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| NA |
+
+### Third Joint
+|__Variables__|__Type__|__Default Value__|__Description__|
+|:---|---|---|---:|
+|max|float|40| maximum rotation degree |
+|min|float|-60| minimum rotation degree|
+|current|float|0| current rotation degree|
+|motion|float|0.1f| degree movement value |
+|speed|float|1.0f | speed of rotation|
+
+|__Class__|__Method__|__Description__|__Key__|
+|:---|---|---|---:|
+|SecondJoint|getEuler()|returns a Vector3 with the local rotation of the joint| NA |
+|SecondJoint|RotatePositiveX_Joint3()|rotates first joint in positive X axis by adding a float number (motion * speed) to the current x position| Z |
+|SecondJoint|RotateNegativeX_Joint3()|rotates first joint in negative X axis by substracting a float number (motion * speed) to the current x position| C |
+|SecondJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| x|
+|SecondJoint|getCurrentJoint3()|returns the local rotation of the Joint | NA |
 |SecondJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| NA |
 
 
