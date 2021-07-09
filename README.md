@@ -16,6 +16,7 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
   [Scripts Controller](#scripts-controller) <br />
    <br />
    [GrabTool (Top)](#Grab-Tool-Top) <br />
+   [GrabTool (Bottom)](#Grab-Tool-Top) <br />
 
 ## Classes and Methods
 
@@ -190,20 +191,27 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 
 |__Variables__|__Type__|__Default Value__|__Description__|
 |:---|---|---|---:|
-|max|float|185| maximum rotation degree |
-|min|float|-185| minimum rotation degree|
-|current|float|0| current rotation degree|
-|motion|float|0.1f| degree movement value |
-|speed|float|1.0f | speed of rotation|
+|limitTranslation|float|185|limit translation point |
+|currentTranslation|float|0| current translation point|
+|move|bool|true| being able to move|
 
 |__Class__|__Method__|__Description__|__Key__|
 |:---|---|---|---:|
-|FirstJoint|getEuler()|returns a Vector3 with the local rotation of the joint| NA |
-|FirstJoint|RotatePositiveX_Joint1()|rotates first joint in positive x axis by adding a float number (motion * speed) to the current x position| A |
-|FirstJoint|RotateNegativeX_Joint1()|rotates first joint in negative x axis by substracting a float number (motion * speed) to the current x position| D |
-|FirstJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| NA |
-|FirstJoint|getCurrentJoint1()|returns the local rotation of the Joint | NA |
-|FirstJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| I |
+|GrabToolTop|localPosition()|returns a Vector3 with the local position of the grab tool at the top| NA |
+|GrabToolTop|setMove()|Moves the tool until reach position| P |
+  
+### Grab Tool Bottom
+
+|__Variables__|__Type__|__Default Value__|__Description__|
+|:---|---|---|---:|
+|limitTranslation|float|185|limit translation point |
+|currentTranslation|float|0| current translation point|
+|move|bool|true| being able to move|
+
+|__Class__|__Method__|__Description__|__Key__|
+|:---|---|---|---:|
+|GrabToolTop|localPosition()|returns a Vector3 with the local position of the grab tool at the top| NA |
+|GrabToolTop|setMove()|Moves the tool until reach position| P |
   
 # List of errors (x means solved)
 - [x] Picking multiple objects
