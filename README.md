@@ -14,6 +14,8 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
   [Sixth Joint](#sixth-joint) <br />
   [Interactable Object](#interactable-object) <br />
   [Scripts Controller](#scripts-controller) <br />
+   <br />
+   [GrabTool (Top)](#Grab-Tool-Top) <br />
 
 ## Classes and Methods
 
@@ -183,6 +185,25 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 |ScriptsController|createLS()|creates an LS file that can be compiled by the fanuc controller| NA |
 |ScriptsController|rotateUntilReachPoint()|rotates each one of the joints until reaching the coordinates from list1| M |
 |ScriptsController|toggleIK()|changes the IKtoggle value| I |
+
+### Grab Tool Top
+
+|__Variables__|__Type__|__Default Value__|__Description__|
+|:---|---|---|---:|
+|max|float|185| maximum rotation degree |
+|min|float|-185| minimum rotation degree|
+|current|float|0| current rotation degree|
+|motion|float|0.1f| degree movement value |
+|speed|float|1.0f | speed of rotation|
+
+|__Class__|__Method__|__Description__|__Key__|
+|:---|---|---|---:|
+|FirstJoint|getEuler()|returns a Vector3 with the local rotation of the joint| NA |
+|FirstJoint|RotatePositiveX_Joint1()|rotates first joint in positive x axis by adding a float number (motion * speed) to the current x position| A |
+|FirstJoint|RotateNegativeX_Joint1()|rotates first joint in negative x axis by substracting a float number (motion * speed) to the current x position| D |
+|FirstJoint|setSpeed(float)|sets the speed of the movement of the joint. It is controlled through the ScriptController| NA |
+|FirstJoint|getCurrentJoint1()|returns the local rotation of the Joint | NA |
+|FirstJoint|setCurrent(float)|sets the current value for the joint rotation (it is useful to reset the value when changing from IK to FK)| I |
   
 # List of errors (x means solved)
 - [x] Picking multiple objects
