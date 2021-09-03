@@ -221,5 +221,5 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 - [ ] Picked object does not follow robot's movement
   
  # Log
-  Reimported the project to 2020.17 (09/02/2021)
+  Reimported the project to 2020.17 (09/02/2021) <br />
   IK Target also changes of speed & IK Target speed was reduced by 50% (09/03/2021)
