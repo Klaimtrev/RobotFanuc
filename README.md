@@ -215,7 +215,10 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
   
 # List of errors (x means solved)
 - [x] Picking multiple objects
-- [ ] Store picking up method inside log.txt
+- [x] Project not working on 2020.17 unity version
+- [ ] Not able to change speed of IK Target
+- [ ] Storing "picking up" method inside log.txt
 - [ ] Picked object does not follow robot's movement
   
  # Log
+  Reimported the project to 2020.17 (09/02/2021)
