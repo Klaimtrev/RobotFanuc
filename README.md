@@ -183,7 +183,6 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
 |ScriptsController|DecreseSpeed()|decreases the speed of all joints of the robot| CTRL |
 |ScriptsController|findIndex(char, string)|finds the index of # from list1 and returns an int[] with the locations of all of them | NA |
 |ScriptsController|loadMovementRecord(int)|loads the coordinates for each joint based on list1 and findIndex| L |
-|ScriptsController|createLS()|creates an LS file that can be compiled by the fanuc controller| NA |
 |ScriptsController|rotateUntilReachPoint()|rotates each one of the joints until reaching the coordinates from list1| M |
 |ScriptsController|toggleIK()|changes the IKtoggle value| I |
 
