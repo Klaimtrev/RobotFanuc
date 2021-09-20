@@ -221,7 +221,7 @@ The final joint of the Robot can grab and drop objects through a Configurable Jo
   
  # Log
   Reimported the project to 2020.17 (09/02/2021) <br />
-  IK Target also changes of speed & IK Target speed was reduced by 50% (09/03/2021)
-  Script files relocated to "Scripts_and_Prefabs" folder (09/07/2021)
-  More comments added to the GrabToolBottom and GrabToolTop script (09/07/2021)
+  IK Target also changes of speed & IK Target speed was reduced by 50% (09/03/2021) <br />
+  Script files relocated to "Scripts_and_Prefabs" folder (09/07/2021) <br />
+  More comments added to the GrabToolBottom and GrabToolTop script (09/07/2021) <br />
   A new version of the robot project was made using HDRP. The new version includes improved graphics and the GUY animation from Madison (09/17/2021)
